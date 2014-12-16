@@ -1,0 +1,427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4978085C1A40475E00DDC5BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978085B1A40475E00DDC5BC /* main.m */; };
+		4978085F1A40475E00DDC5BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4978085E1A40475E00DDC5BC /* AppDelegate.m */; };
+		497808621A40475E00DDC5BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 497808611A40475E00DDC5BC /* ViewController.m */; };
+		497808651A40475E00DDC5BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497808631A40475E00DDC5BC /* Main.storyboard */; };
+		497808671A40475E00DDC5BC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497808661A40475E00DDC5BC /* Images.xcassets */; };
+		4978086A1A40475E00DDC5BC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 497808681A40475E00DDC5BC /* LaunchScreen.xib */; };
+		497808761A40475E00DDC5BC /* TWChatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 497808751A40475E00DDC5BC /* TWChatsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		497808701A40475E00DDC5BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4978084E1A40475E00DDC5BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 497808551A40475E00DDC5BC;
+			remoteInfo = TWChats;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		497808561A40475E00DDC5BC /* TWChats.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWChats.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4978085A1A40475E00DDC5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4978085B1A40475E00DDC5BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4978085D1A40475E00DDC5BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4978085E1A40475E00DDC5BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		497808601A40475E00DDC5BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		497808611A40475E00DDC5BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		497808641A40475E00DDC5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		497808661A40475E00DDC5BC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		497808691A40475E00DDC5BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4978086F1A40475E00DDC5BC /* TWChatsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWChatsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		497808741A40475E00DDC5BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497808751A40475E00DDC5BC /* TWChatsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TWChatsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		497808531A40475E00DDC5BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978086C1A40475E00DDC5BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4978084D1A40475E00DDC5BC = {
+			isa = PBXGroup;
+			children = (
+				497808581A40475E00DDC5BC /* TWChats */,
+				497808721A40475E00DDC5BC /* TWChatsTests */,
+				497808571A40475E00DDC5BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		497808571A40475E00DDC5BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				497808561A40475E00DDC5BC /* TWChats.app */,
+				4978086F1A40475E00DDC5BC /* TWChatsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		497808581A40475E00DDC5BC /* TWChats */ = {
+			isa = PBXGroup;
+			children = (
+				4978085D1A40475E00DDC5BC /* AppDelegate.h */,
+				4978085E1A40475E00DDC5BC /* AppDelegate.m */,
+				497808601A40475E00DDC5BC /* ViewController.h */,
+				497808611A40475E00DDC5BC /* ViewController.m */,
+				497808631A40475E00DDC5BC /* Main.storyboard */,
+				497808661A40475E00DDC5BC /* Images.xcassets */,
+				497808681A40475E00DDC5BC /* LaunchScreen.xib */,
+				497808591A40475E00DDC5BC /* Supporting Files */,
+			);
+			path = TWChats;
+			sourceTree = "<group>";
+		};
+		497808591A40475E00DDC5BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4978085A1A40475E00DDC5BC /* Info.plist */,
+				4978085B1A40475E00DDC5BC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		497808721A40475E00DDC5BC /* TWChatsTests */ = {
+			isa = PBXGroup;
+			children = (
+				497808751A40475E00DDC5BC /* TWChatsTests.m */,
+				497808731A40475E00DDC5BC /* Supporting Files */,
+			);
+			path = TWChatsTests;
+			sourceTree = "<group>";
+		};
+		497808731A40475E00DDC5BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				497808741A40475E00DDC5BC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		497808551A40475E00DDC5BC /* TWChats */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 497808791A40475E00DDC5BC /* Build configuration list for PBXNativeTarget "TWChats" */;
+			buildPhases = (
+				497808521A40475E00DDC5BC /* Sources */,
+				497808531A40475E00DDC5BC /* Frameworks */,
+				497808541A40475E00DDC5BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TWChats;
+			productName = TWChats;
+			productReference = 497808561A40475E00DDC5BC /* TWChats.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4978086E1A40475E00DDC5BC /* TWChatsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4978087C1A40475E00DDC5BC /* Build configuration list for PBXNativeTarget "TWChatsTests" */;
+			buildPhases = (
+				4978086B1A40475E00DDC5BC /* Sources */,
+				4978086C1A40475E00DDC5BC /* Frameworks */,
+				4978086D1A40475E00DDC5BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				497808711A40475E00DDC5BC /* PBXTargetDependency */,
+			);
+			name = TWChatsTests;
+			productName = TWChatsTests;
+			productReference = 4978086F1A40475E00DDC5BC /* TWChatsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4978084E1A40475E00DDC5BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = lvjian;
+				TargetAttributes = {
+					497808551A40475E00DDC5BC = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					4978086E1A40475E00DDC5BC = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 497808551A40475E00DDC5BC;
+					};
+				};
+			};
+			buildConfigurationList = 497808511A40475E00DDC5BC /* Build configuration list for PBXProject "TWChats" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4978084D1A40475E00DDC5BC;
+			productRefGroup = 497808571A40475E00DDC5BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				497808551A40475E00DDC5BC /* TWChats */,
+				4978086E1A40475E00DDC5BC /* TWChatsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		497808541A40475E00DDC5BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497808651A40475E00DDC5BC /* Main.storyboard in Resources */,
+				4978086A1A40475E00DDC5BC /* LaunchScreen.xib in Resources */,
+				497808671A40475E00DDC5BC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978086D1A40475E00DDC5BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		497808521A40475E00DDC5BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497808621A40475E00DDC5BC /* ViewController.m in Sources */,
+				4978085F1A40475E00DDC5BC /* AppDelegate.m in Sources */,
+				4978085C1A40475E00DDC5BC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4978086B1A40475E00DDC5BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				497808761A40475E00DDC5BC /* TWChatsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		497808711A40475E00DDC5BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 497808551A40475E00DDC5BC /* TWChats */;
+			targetProxy = 497808701A40475E00DDC5BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		497808631A40475E00DDC5BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497808641A40475E00DDC5BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		497808681A40475E00DDC5BC /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				497808691A40475E00DDC5BC /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		497808771A40475E00DDC5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		497808781A40475E00DDC5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4978087A1A40475E00DDC5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TWChats/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4978087B1A40475E00DDC5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TWChats/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4978087D1A40475E00DDC5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TWChatsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWChats.app/TWChats";
+			};
+			name = Debug;
+		};
+		4978087E1A40475E00DDC5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TWChatsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWChats.app/TWChats";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		497808511A40475E00DDC5BC /* Build configuration list for PBXProject "TWChats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				497808771A40475E00DDC5BC /* Debug */,
+				497808781A40475E00DDC5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		497808791A40475E00DDC5BC /* Build configuration list for PBXNativeTarget "TWChats" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978087A1A40475E00DDC5BC /* Debug */,
+				4978087B1A40475E00DDC5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4978087C1A40475E00DDC5BC /* Build configuration list for PBXNativeTarget "TWChatsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4978087D1A40475E00DDC5BC /* Debug */,
+				4978087E1A40475E00DDC5BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4978084E1A40475E00DDC5BC /* Project object */;
+}
