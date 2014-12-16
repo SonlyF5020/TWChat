@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface JoinViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
 
+- (IBAction)handleJoinAction:(id)sender;
 @end
 
