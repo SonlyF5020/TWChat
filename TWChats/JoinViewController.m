@@ -9,6 +9,7 @@
 #import "JoinViewController.h"
 #import"AFHTTPRequestOperationManager.h"
 #import "AFHTTPRequestOperation.h"
+#import "MainViewController.h"
 
 @interface JoinViewController ()
 
@@ -33,13 +34,23 @@
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
     NSDictionary *parameters = @{
             @"user[name]" : name,
-            @"user[avatar]" : @""
+            @"user[avator_url]" : @"http://tp4.sinaimg.cn/1655973031/180/5672535961/1"
     };
 
     [manager POST:@"http://192.168.43.69:3000/users.json"
        parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"welcome: %@", [responseObject objectForKey:@"name"]);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+
+                [[NSUserDefaults standardUserDefaults] setObject:responseObject
+                                                          forKey:@"currentUser"];
+                [[NSUserDefaults standardUserDefaults] synchronize];
+
+                MainViewController *mainController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                                    instantiateViewControllerWithIdentifier:@"MainViewController"];
+
+                [self presentViewController:mainController animated:YES completion:nil];
+
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
     }];
 }

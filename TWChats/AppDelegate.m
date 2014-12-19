@@ -16,7 +16,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    NSLog(@"app launched !!!!");
+    NSDictionary *currentUser = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentUser"];
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+
+
+    if (currentUser == nil) {
+        NSLog(@"start with join view controller");
+
+        self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+                instantiateViewControllerWithIdentifier:@"JoinViewController"];
+        [self.window makeKeyAndVisible];
+
+        return YES;
+    }
+
+    NSLog(@"start with main view controller");
+
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]
+            instantiateViewControllerWithIdentifier:@"MainViewController"];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
