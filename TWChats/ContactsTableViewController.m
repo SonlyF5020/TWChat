@@ -31,7 +31,7 @@
 
 - (void)refresh:(UIRefreshControl *) refresh {
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager GET:@"http://192.168.43.69:3000/users.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:@"http://192.168.1.108:3000/users.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         self.contacts = responseObject;
         [self.tableView reloadData];

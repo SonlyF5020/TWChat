@@ -1,7 +1,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ChatsViewController : UIViewController
-            <UITableViewDelegate, UITableViewDataSource>
+            <UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate>
 
 @property(nonatomic, strong) NSDictionary *chatWith;
 

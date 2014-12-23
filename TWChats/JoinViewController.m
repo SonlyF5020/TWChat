@@ -37,7 +37,7 @@
             @"user[avator_url]" : @"http://tp4.sinaimg.cn/1655973031/180/5672535961/1"
     };
 
-    [manager POST:@"http://192.168.43.69:3000/users.json"
+    [manager POST:@"http://192.168.1.108:3000/users.json"
        parameters:parameters success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"welcome: %@", [responseObject objectForKey:@"name"]);
 

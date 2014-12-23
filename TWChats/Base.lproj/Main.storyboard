@@ -168,12 +168,12 @@
                         <viewControllerLayoutGuide type="top" id="CRS-Q5-PhE"/>
                         <viewControllerLayoutGuide type="bottom" id="KET-G5-ygX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BXr-d1-bvu">
+                    <view key="view" contentMode="scaleToFill" id="BXr-d1-bvu" customClass="TPKeyboardAvoidingScrollView">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="65" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="QB7-bu-PRc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="517"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="idMessageCell" textLabel="bpl-G0-ICo" detailTextLabel="TDS-w6-Xcg" imageView="l8g-7i-ldb" rowHeight="65" style="IBUITableViewCellStyleSubtitle" id="B7R-MP-IDH">
@@ -212,7 +212,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kfQ-dt-RLn">
                                         <rect key="frame" x="8" y="10" width="237" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pt0-o0-CaP">
                                         <rect key="frame" x="253" y="10" width="59" height="30"/>
@@ -231,7 +231,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="qjA-xV-zrg"/>
                     <connections>
+                        <outlet property="bottomView" destination="tt1-Zd-voO" id="5sd-YI-dl8"/>
                         <outlet property="messageField" destination="kfQ-dt-RLn" id="WNN-wZ-ELn"/>
+                        <outlet property="scrollView" destination="BXr-d1-bvu" id="588-35-iCY"/>
                         <outlet property="tableView" destination="QB7-bu-PRc" id="hPi-fi-USz"/>
                     </connections>
                 </viewController>
@@ -295,7 +297,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="default_avatar.png" width="200" height="200"/>
+        <image name="default_avatar.png" width="100" height="100"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

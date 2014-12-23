@@ -1,12 +1,15 @@
 #import "ChatsViewController.h"
 #import "UIImageView+WebCache.h"
+#import "TPKeyboardAvoidingScrollView.h"
 #import <Firebase/Firebase.h>
 
 @interface ChatsViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *messageField;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic, strong) NSMutableArray *messages;
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
 
+@property (weak, nonatomic) IBOutlet TPKeyboardAvoidingScrollView *scrollView;
 @end
 
 @implementation ChatsViewController  {
@@ -21,6 +24,26 @@
 
     currentUser = [[NSUserDefaults standardUserDefaults] objectForKey:@"currentUser"];
     self.messages = [NSMutableArray arrayWithCapacity:12];
+    self.messageField.delegate = self;
+
+    self.automaticallyAdjustsScrollViewInsets = NO;
+
+//    NSLog(@"scrollView: %@", [self.scrollView contentSize]);
+    [self.scrollView contentSizeToFit];
+    [self.scrollView setContentSize: [UIScreen mainScreen].bounds.size];
+
+    self.scrollView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
+    self.tableView.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 50);
+    self.bottomView.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height - 50,
+            [UIScreen mainScreen].bounds.size.width, 50);
+
+    NSLog(@"bottomSize: %f", self.bottomView.bounds.size.height);
+    NSLog(@"tableView Point:(%f, %f)", self.tableView.bounds.origin.x, self.tableView.bounds.origin.y);
+    NSLog(@"tableView: %f", self.tableView.bounds.size.height);
+    NSLog(@"scrollView: %f", [self.scrollView contentSize].height);
+    NSLog(@"nav: %f", self.navigationItem.titleView.frame.size.height);
+    NSLog(@"screenHeight: %f", [UIScreen mainScreen].bounds.size.height);
+
 
     fb = [[Firebase alloc] initWithUrl:@"https://saochats.firebaseio.com/"];
 
@@ -69,6 +92,11 @@
     };
 
     [fb setValue:message];
+
+    [self.messages addObject:message];
+    [self.tableView reloadData];
+    [self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:[_messages count] - 1 inSection:0]
+                          atScrollPosition:UITableViewScrollPositionBottom animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
